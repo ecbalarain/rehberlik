@@ -1,0 +1,86 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs / caches
+.dist/
+dist/
+build/
+.tmp/
+.temp/
+tmp/
+.cache/
+
+# Test coverage/output
+coverage/
+.nyc_output/
+lcov-report/
+.cypress/
+playwright-report/
+test-results/
+
+# Vite / Turbo / Parcel
+.vite/
+.turbo/
+.parcel-cache/
+
+# Framework-specific
+.next/
+.vercel/
+out/
+.svelte-kit/
+.nuxt/
+.storybook-out/
+storybook-static/
+
+# Cloudflare Workers / Wrangler
+.wrangler/
+.dev.vars
+.mf/
+
+# Firebase local state
+.firebase/
+firebase-debug.log
+firestore-debug.log
+pubsub-debug.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Package managers (keep lockfiles committed)
+.pnpm-store/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# IDE/editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.iml
+
+# Docker
+.docker/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
