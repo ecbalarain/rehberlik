@@ -4,8 +4,9 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "node ./scripts/verify-free-plan.mjs && vite dev",
+		"dev:wrangler": "npm run build && npx wrangler pages dev .svelte-kit/output --compatibility-date=2025-08-17",
+		"build": "node ./scripts/verify-free-plan.mjs && vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''"
 	},

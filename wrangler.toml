@@ -1,0 +1,25 @@
+name = "ruberlik"
+compatibility_date = "2025-08-17"
+
+[vars]
+APP_ENV = "development"
+TURNSTILE_SITE_KEY = "0x4AAAAAABsqtpVcwGZcHJtH"
+VAPID_PUBLIC_KEY = "your-vapid-public"
+# NOTE: keep only public values here. Secrets must be stored with `wrangler secret put`
+# TURNSTILE_SECRET_KEY and VAPID_PRIVATE_KEY are sensitive and removed from [vars].
+# Use:
+#   wrangler secret put TURNSTILE_SECRET_KEY
+#   wrangler secret put VAPID_PRIVATE_KEY
+
+[[d1_databases]]
+binding = "DB_D1"
+database_name = "ruhberlik_db"
+database_id = "f8bc5c02-7214-46b3-85c3-4007aa568e44"
+
+[[kv_namespaces]]
+binding = "KV_APP"
+id = "53d260ac78b242d9a18f051317a1d667"
+
+[[r2_buckets]]
+binding = "ruhberlikbucket"
+bucket_name = "ruhberlikbucket"

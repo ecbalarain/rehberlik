@@ -1,0 +1,3 @@
+1. project configured with svelte
+2. Configured svelte.config.js with adapter-cloudflare.
+3. Added `wrangler.toml` with D1/KV/R2 and queue bindings (placeholders).
